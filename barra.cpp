@@ -25,5 +25,21 @@ Barra::Barra(double Area, double Longitud, double Young, Nudo *Nudoi,Nudo *Nudoj
 
 void Barra::creamarizlocal()
 {
+    switch (m_tipobarra) {
+    case TipoBarra::BiArticulada:
+        //Todo, matriz de rigidez 2x2
+        break;
+    case TipoBarra::BiEmpotrada:
+        //Todo, matriz de rigidez 3x3
+        break;
+    case TipoBarra::ArticuladaEmpotrada:
+        //Todo, matriz de rigidez 3x2
+        break;
+    case TipoBarra::EmpotradaArticulada:
+        //Todo, matriz de rigidez 2x3
+        break;
+    default:
+        break;
+    }
 
 }
