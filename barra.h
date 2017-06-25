@@ -3,12 +3,16 @@
 #include<nudo.h>
 #include<vector>
 #include<tipos.h>
+#include <exception>
+#include <iostream>
+#include <string>
 
 class Barra
 {
 public:
     Barra(double Area,double Longitud,double Young,Nudo *Nudoi,Nudo *Nudoj );
     //GiraBarra(Barra this);
+    void displaymatriz(std::vector<std::vector<double>>);
 
 
 private:
