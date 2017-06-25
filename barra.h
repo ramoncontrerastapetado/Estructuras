@@ -3,11 +3,13 @@
 #include<nudo.h>
 #include<vector>
 #include<tipos.h>
+#include<Eigen/Dense>
 
 class Barra
 {
 public:
     Barra(double Area,double Longitud,double Young,Nudo *Nudoi,Nudo *Nudoj );
+    ~Barra();
     //GiraBarra(Barra this);
 
 
@@ -22,7 +24,7 @@ private:
 
     TipoBarra m_tipobarra;
 
-
+    Eigen::MatrixXd m_riglocEigen;
     int m_idNudoi;
     int m_idNudoj;
     Nudo* m_nudoi;
