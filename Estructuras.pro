@@ -22,18 +22,18 @@ HEADERS += \
 
 
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win32_MT
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win32_MTd
+#win32:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win32_MT
+#else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win32_MTd
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win32_MT
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win32_MTd
+#win32:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win32_MT
+#else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win32_MTd
 
 
-#win64:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win64_MT
-#else:win64:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win64_MTd
+CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win64_MT
+else:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -lblas_win64_MTd
 
-#win64:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win64_MT
-#else:win64:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win64_MTd
+CONFIG(release, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win64_MT
+else:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/BLAS_LAPACK/ -llapack_win64_MTd
 
 target.path = Compilados/$$TARGET
 INSTALLS += target
