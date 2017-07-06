@@ -23,37 +23,7 @@ Barra::Barra(double Area, double Longitud, double Young, Nudo *Nudoi,Nudo *Nudoj
 
 }
 
-void Barra::displaymatriz(std::vector<std::vector<double> > matriz)
-{
 
-    int dimn,dimm;
-    try{
-        dimn=matriz.size();
-        for(int i=0;i<dimn;i++){
-
-            dimm=matriz.size();
-            if(dimn!=dimn){
-                std::cout<<"La dimension de la matriz entre los nudos"+m_idNudoi<<" y "<<m_idNudoj<<"No esta bien construida"<<std::endl
-                                                                            <<"La fila: "<<i<<"No tiene dimensión "<<dimn<<std::endl;
-
-
-            }
-        }
-
-    }
-    catch(std::exception &e){
-
-    }
-
-//    int=digitcount
-//    for(int i=0;i<dimn;i++){
-//        for(int j=0;j<djmm;j++){
-//           if()
-//            sd::cout<<matriz[i][j]<<
-//        }
-//    }
-
-}
 
 void Barra::creamarizlocal()
 {
